@@ -43,12 +43,11 @@ Enter the property details and we'll predict the price for you!
 """)
 
 # Inputs do usuário
-num_rooms = st.slider('Number of Rooms', min_value=1, max_value=10, value=1)
-num_bathrooms = st.slider('Number of Bathrooms', min_value=1, max_value=10, value=1)
-land_size = st.number_input('Land Size (sqm)', value=100)
-building_area = st.number_input('Building Area (sqm)', value=100)
-year_built = st.number_input('Year Built', min_value=1800, max_value=2022, value=2000)
-
+num_rooms = st.slider('Número de Quartos', min_value=1, max_value=10, value=1)
+num_bathrooms = st.slider('Número de Banheiros', min_value=1, max_value=10, value=1)
+land_size = st.number_input('Tamanho do Terreno (m²)', value=100)
+building_area = st.number_input('Área Construída (m²)', value=100)
+year_built = st.number_input('Ano de Construção', min_value=1800, max_value=2022, value=2000)
 
 # Previsão do preço com base nos inputs do usuário
 predicted_price = model.predict([[num_rooms, num_bathrooms, land_size, building_area, year_built]])
