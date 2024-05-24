@@ -20,7 +20,7 @@ def get_mae(max_leaf_nodes, train_X, val_X, train_y, val_y):
     return mae
 
 # buscando arquivo (dataset proveniente do Kaggle)
-arquive_path = r"C:\Users\Tamirys\Documents\Kaggle\melb_data.csv"
+arquive_path = 'melb_data.csv'
 # lendo o arquivo
 dataset_melb = pd.read_csv(arquive_path)
 # dropando valores ausentes (na -> not available)
