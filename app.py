@@ -39,6 +39,9 @@ st.title('Melbourne Housing Price Prediction')
 
 # Descrição do aplicativo
 st.write("""
+This Streamlit app predicts the price of a house in Melbourne based on your input. You can enter property details (number of rooms, number of bathrooms, land size, building area, and year built) using input fields with increment and decrement buttons. The app uses a pre-trained Decision Tree Regressor model to make predictions and displays the predicted price in Australian dollars.
+""")
+st.write("""
 Enter the property details and we'll predict the price for you!
 """)
 
