@@ -43,8 +43,8 @@ Enter the property details and we'll predict the price for you!
 """)
 
 # Inputs do usuário
-num_rooms = st.slider('Number of Rooms', min_value=1, max_value=10, value=1)
-num_bathrooms = st.slider('Number of Bathrooms', min_value=1, max_value=10, value=1)
+num_rooms = st.number_input('Number of Rooms', min_value=1, max_value=10, value=1, step=1)
+num_bathrooms = st.number_input('Number of Bathrooms', min_value=1, max_value=10, value=1, step=1)
 land_size = st.number_input('Land Size (sqm)', value=100)
 building_area = st.number_input('Building Area (sqm)', value=100)
 year_built = st.number_input('Year Built', min_value=1800, max_value=2022, value=2000)
